@@ -5,10 +5,6 @@ local App = Gtk.Application({
   application_id = "com.github.moonsteal.lua-gtk-examples.GtkApplicationWindow"
 })
 
--- For more info about these signals, see this:
--- https://wiki.gnome.org/HowDoI/GtkApplication
--- https://developer.gnome.org/gio/stable/GApplication.html
--- https://developer.gnome.org/gtk3/stable/GtkApplication.html
 function App:on_startup()
   Gtk.ApplicationWindow({
     application = self,
@@ -18,6 +14,11 @@ function App:on_startup()
 end
 
 function App:on_activate()
+  --[[ GtkHeaderBar:
+
+    A container that acts like the window titlebar
+
+  ]]
   self.active_window:set_titlebar(Gtk.HeaderBar({
     -- By default, all GTK widgets are not visibles by default
     visible = true,

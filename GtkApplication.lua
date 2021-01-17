@@ -1,6 +1,12 @@
 local lgi = require("lgi")
 local Gtk = lgi.require("Gtk", "3.0")
 
+--[[ GtkApplication:
+
+  Provides an application interface. I recommend you to read the
+  info in the links below
+
+]]
 local App = Gtk.Application({
   application_id = "com.github.moonsteal.lua-gtk-examples.GtkApplication"
 })

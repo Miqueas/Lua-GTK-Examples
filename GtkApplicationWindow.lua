@@ -5,11 +5,12 @@ local App = Gtk.Application({
   application_id = "com.github.moonsteal.lua-gtk-examples.GtkApplicationWindow"
 })
 
--- For more info about these signals, see this:
--- https://wiki.gnome.org/HowDoI/GtkApplication
--- https://developer.gnome.org/gio/stable/GApplication.html
--- https://developer.gnome.org/gtk3/stable/GtkApplication.html
 function App:on_startup()
+  --[[ GtkApplicationWindow:
+
+    A GtkWindow thats has a better integration with GtkApplication
+
+  ]]
   Gtk.ApplicationWindow({
     application = self,
     default_width = 400,
