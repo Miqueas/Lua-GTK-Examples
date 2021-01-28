@@ -20,6 +20,9 @@ Ok, if you're new in GTK, we recommen this order:
     * [GtkLabel API Docs][GtkLabel_API]
   - [GtkBox1](GtkBox1.lua)
     * [GtkBox API Docs][GtkBox_API]
+  - [GtkGrid1](GtkGrid1.lua)
+  - [GtkGrid2](GtkGrid2.lua)
+    * [GtkGrid API Docs][GtkGrid_API]
   - [GtkButton1](GtkButton1.lua)
     * [GtkButton API Docs][GtkButton_API]
 
@@ -30,3 +33,4 @@ Ok, if you're new in GTK, we recommen this order:
 [GtkLabel_API]: https://developer.gnome.org/gtk3/stable/GtkLabel.html
 [GtkButton_API]: https://developer.gnome.org/gtk3/stable/GtkButton.html
 [GtkBox_API]: https://developer.gnome.org/gtk3/stable/GtkBox.html
+[GtkGrid_API]: https://developer.gnome.org/gtk3/stable/GtkGrid.html
