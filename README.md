@@ -16,8 +16,8 @@ Ok, if you're new in GTK, we recommen this order:
     * [GtkApplicationWindow API Docs][GtkApplicationWindow_API]
   - [GtkHeaderBar](GtkHeaderBar.lua)
     * [GtkHeaderBar API Docs][GtkHeaderBar_API]
-  - [GtkLabel2](GtkLabel1.lua)
-  - [GtkLabel1](GtkLabel2.lua)
+  - [GtkLabel1](GtkLabel1.lua)
+  - [GtkLabel2](GtkLabel2.lua)
     * [GtkLabel API Docs][GtkLabel_API]
   - [GtkBox1](GtkBox1.lua)
     * [GtkBox API Docs][GtkBox_API]
