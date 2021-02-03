@@ -2,7 +2,7 @@ local lgi = require("lgi")
 local Gtk = lgi.require("Gtk", "3.0")
 
 local App = Gtk.Application({
-  application_id = "com.github.moonsteal.lua-gtk-examples.GtkLabel"
+  application_id = "com.github.moonsteal.lua-gtk-examples.GtkLabel2"
 })
 
 function App:on_startup()
@@ -18,7 +18,7 @@ function App:on_activate()
     visible = true,
     show_close_button = true,
     title = "GtkLabel",
-    subtitle = "Example 1"
+    subtitle = "Example 2"
   }))
 
   local Label = Gtk.Label({

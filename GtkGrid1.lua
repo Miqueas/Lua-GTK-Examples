@@ -18,8 +18,8 @@ function App:on_activate()
   self.active_window:set_titlebar(Gtk.HeaderBar({
     visible = true,
     show_close_button = true,
-    title = "GtkGrid1",
-    subtitle = "Basic GtkGrid example"
+    title = "GtkGrid",
+    subtitle = "Example 1"
   }))
 
   --[[ GtkGrid:

@@ -22,9 +22,11 @@ function App:on_activate()
   }))
 
   --[[ GtkBox:
+
     A container thats organize widgets lineal in one of these directions:
       - Vertical
       - Horizontal
+
   ]]
   local Box = Gtk.Box({
     visible = true,

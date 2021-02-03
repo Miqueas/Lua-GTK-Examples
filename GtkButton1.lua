@@ -24,7 +24,7 @@ function App:on_activate()
 
   --[[ GtkButton:
 
-    A button lol
+    Just a button lol
 
   ]]
   local Button = Gtk.Button({
@@ -44,7 +44,7 @@ function App:on_activate()
     Notification:set_body("You cliked the button!")
 
     -- 'self' can't be used here, because 'self' here
-    -- reffers to 'Button'
+    -- reffers to the GtkButton that's clicked
     App:send_notification(Notification_ID, Notification)
 
     -- Incrementing this value makes the app spawn various

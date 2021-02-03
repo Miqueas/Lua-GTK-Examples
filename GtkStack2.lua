@@ -2,7 +2,7 @@ local lgi = require("lgi")
 local Gtk = lgi.require("Gtk", "3.0")
 
 local App = Gtk.Application({
-  application_id = "com.github.moonsteal.lua-gtk-examples.Gtk"
+  application_id = "com.github.moonsteal.lua-gtk-examples.GtkStack2"
 })
 
 function App:on_startup()
@@ -17,8 +17,8 @@ function App:on_activate()
   self.active_window:set_titlebar(Gtk.HeaderBar({
     visible = true,
     show_close_button = true,
-    title = "GtkLabel",
-    subtitle = "Example 1"
+    title = "GtkStack",
+    subtitle = "Example 2"
   }))
 
   --[[ GtkStack:

@@ -48,12 +48,12 @@ function App:on_activate()
     Grid
   })
 
-  for top = 0, 40 do
-    for left = 0, 40 do
+  for top = 1, 100 do
+    for left = 1, 100 do
       Grid:attach(
         Gtk.Label({ visible = true, label = "Top: "..top..". Left: "..left }),
-        left,
-        top,
+        left - 1,
+        top - 1,
         1, 1
       )
     end
