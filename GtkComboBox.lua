@@ -34,7 +34,12 @@ function App:on_activate()
   -- Label to be updated
   local Label = Gtk.Label({ visible = true, label = "Default option: 0" })
 
-  -- The combo box
+  --[[ GtkComboBox:
+
+    A container that allows the user to select "something" among several
+    valid options.
+
+  ]]
   local Combo = Gtk.ComboBox({
     visible = true,
     model = Model,
