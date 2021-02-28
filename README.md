@@ -26,6 +26,8 @@ Ok, if you're new in GTK, we recommen this order:
     * [GtkGrid API Docs][GtkGrid_API]
   - [GtkButton1](GtkButton1.lua)
     * [GtkButton API Docs][GtkButton_API]
+  - [GtkCssProvider1](GtkCssProvider1.lua) by [@diazvictor](https://github.com/diazvictor/)
+	* [GtkCssProvider API Docs][GtkCssProvider_API]
 
 [GtkWindow_API]: https://developer.gnome.org/gtk3/stable/GtkWindow.html
 [GtkApplication_API]: https://developer.gnome.org/gtk3/stable/GtkApplication.html
@@ -35,3 +37,4 @@ Ok, if you're new in GTK, we recommen this order:
 [GtkButton_API]: https://developer.gnome.org/gtk3/stable/GtkButton.html
 [GtkBox_API]: https://developer.gnome.org/gtk3/stable/GtkBox.html
 [GtkGrid_API]: https://developer.gnome.org/gtk3/stable/GtkGrid.html
+[GtkCssProvider_API]: https://developer.gnome.org/gtk3/stable/GtkCssProvider.html
