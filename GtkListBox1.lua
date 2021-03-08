@@ -47,7 +47,7 @@ function App:on_activate()
 
   local Btn = Gtk.Button({
     visible = true,
-    label = "Cargar",
+    label = "Load",
     halign = Gtk.Align.CENTER,
     valign = Gtk.Align.CENTER
   })
