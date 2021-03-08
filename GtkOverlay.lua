@@ -17,13 +17,21 @@ function App:on_activate()
   self.active_window:set_titlebar(Gtk.HeaderBar({
     visible = true,
     show_close_button = true,
-    title = "Your app title",
-    subtitle = "Your app subtitle"
+    title = "GtkOverlay"
   }))
 
+  --[[ GtkOverlay:
+
+    A widget that allows widgets on top of other (like an stack). GtkOverlay can have
+    only one main (child) widget, trying to add another widget using the 'add()'
+    method will throw an error. Use 'add_overlay()' instead, that put the given widget
+    on top of the main widget or another widget.
+
+  ]]
   local Overlay = Gtk.Overlay({
     visible = true,
 
+    -- Our main widget
     Gtk.Image({
       visible = true,
       icon_name = "firefox",

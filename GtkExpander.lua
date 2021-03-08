@@ -22,6 +22,14 @@ function App:on_activate()
   }))
 
   local LoremIpsum = "Duis in metus eros. Duis faucibus rutrum eros eu vestibulum. Proin et arcu nulla. Etiam at lacinia nibh. Vivamus pellentesque nunc nibh, ac dignissim massa lobortis ut. Integer eu felis in elit semper ullamcorper at in ipsum. Suspendisse tempus massa vel nibh tristique vestibulum. Vestibulum varius eu nunc eu interdum. Curabitur pulvinar velit in purus facilisis, et auctor augue consequat. Donec finibus felis ligula, a convallis justo tristique a."
+
+  --[[ GtkExpander:
+
+    A widget that allows hide its child, like a GtkRevealer, but you don't need to
+    show/hide the child programmatically and has a small "hint" that there is
+    "something" hidden.
+
+  ]]
   local Expand = Gtk.Expander({
     visible = true,
     label = [[  <span size="large" font_weight="bold">Lorem ipsum</span>  ]],

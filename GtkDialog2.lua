@@ -7,20 +7,24 @@ local App = Gtk.Application({
 })
 
 function App:on_startup()
+  --[[ GtkDialog:
+
+    A (generic) popup window
+
+  ]]
   local Dialog = Gtk.Dialog({
     application = self,
     use_header_bar = 1,
     default_width = 400,
-    border_width = 10,
-    title = "Confirmation"
+    border_width = 10
   })
 
   Dialog:add_button("Yes 👍", Gtk.ResponseType.OK)
   Dialog:add_button("No 🛑", Gtk.ResponseType.CANCEL)
 
   local Header = Dialog:get_header_bar()
-  Header.title = "Confirmation"
-  Header.subtitle = "About the universe destruction"
+  Header.title = "GtkDialog"
+  Header.subtitle = "Example 2"
 
   local TitleText = [[<span size="x-large" font-weight="bold">Universe destruction</span>]]
   local Title = Gtk.Label({ visible = true, label = TitleText, use_markup = true })

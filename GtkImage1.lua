@@ -17,11 +17,18 @@ function App:on_activate()
   self.active_window:set_titlebar(Gtk.HeaderBar({
     visible = true,
     show_close_button = true,
-    title = "Your app title",
-    subtitle = "Your app subtitle"
+    title = "GtkImage",
+    subtitle = "Example 1"
   }))
 
-  self.active_window:add(Gtk.Image({ visible = true, file = "Moonsteal-Logo.jpg" }))
+  --[[ GtkImage:
+
+    Well... A widget that display an image lol
+
+  ]]
+  local Img = Gtk.Image({ visible = true, file = "Moonsteal-Logo.jpg" })
+
+  self.active_window:add(Img)
   self.active_window:present()
 end
 

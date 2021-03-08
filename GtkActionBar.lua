@@ -17,15 +17,19 @@ function App:on_activate()
   self.active_window:set_titlebar(Gtk.HeaderBar({
     visible = true,
     show_close_button = true,
-    title = "Your app title",
-    subtitle = "Your app subtitle"
+    title = "GtkActionBar"
   }))
 
-  local Box = Gtk.Box({ visible = true, orientation = Gtk.Orientation.VERTICAL })
+  --[[ GtkActionBar:
+
+    A full width container to add contextual actions.
+
+  ]]
   local Bar = Gtk.ActionBar({ visible = true })
   Bar:pack_start(Gtk.Label({ visible = true, label = "Something" }))
   Bar:pack_end(Gtk.Button({ visible = true, label = "A button" }))
 
+  local Box = Gtk.Box({ visible = true, orientation = Gtk.Orientation.VERTICAL })
   Box:pack_start(Gtk.Label({ visible = true, label = "Here is the content of your app" }), true, true, 0)
   Box:pack_end(Bar, false, true, 0)
 

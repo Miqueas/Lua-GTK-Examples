@@ -9,7 +9,7 @@ function App:on_startup()
   Gtk.ApplicationWindow({
     application = self,
     default_width = 400,
-    default_height = 400
+    default_height = 40
   })
 end
 
@@ -17,15 +17,20 @@ function App:on_activate()
   local Header = Gtk.HeaderBar({
     visible = true,
     show_close_button = true,
-    title = "Your app title",
-    subtitle = "Your app subtitle"
+    title = "GtkRevealer"
   })
 
-  local Btn = Gtk.Button({ visible = true, label = "Show message" })
+  local Btn = Gtk.Button({ visible = true, label = "Toggle message" })
   Header:pack_start(Btn)
   self.active_window:set_titlebar(Header)
 
   local Box = Gtk.Box({ visible = true, orientation = Gtk.Orientation.VERTICAL })
+
+  --[[ GtkRevealer:
+
+    A container for show/hide a widget with animation.
+
+  ]]
   local Rev = Gtk.Revealer({
     visible = true,
 
@@ -33,11 +38,7 @@ function App:on_activate()
   })
 
   function Btn:on_clicked()
-    if Rev.reveal_child then
-      Rev.reveal_child = false
-    else
-      Rev.reveal_child = true
-    end
+    Rev.reveal_child = (not Rev.reveal_child) and true or false
   end
 
   Box:pack_start(Rev, false, true, 0)

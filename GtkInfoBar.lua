@@ -18,12 +18,10 @@ function App:on_activate()
   self.active_window:set_titlebar(Gtk.HeaderBar({
     visible = true,
     show_close_button = true,
-    title = "GtkGrid",
-    subtitle = "Example 2"
+    title = "GtkInfoBar"
   }))
 
-  local Box = Gtk.Box({ visible = true, orientation = Gtk.Orientation.VERTICAL })
-
+  local Box         = Gtk.Box({ visible = true, orientation = Gtk.Orientation.VERTICAL })
   local InfoBtn     = Gtk.Button({ visible = true, label = "Info" })
   local WarningBtn  = Gtk.Button({ visible = true, label = "Warning" })
   local QuestionBtn = Gtk.Button({ visible = true, label = "Question" })
@@ -31,21 +29,32 @@ function App:on_activate()
   local OtherBtn    = Gtk.Button({ visible = true, label = "Other" })
 
   function CreateInfoBar(self, data)
+    --[[ GtkInfoBar:
+
+      A widget that can be used to show messages to the user.
+      Think in it as In-App notifications. The GtkInfoBar API
+      is very similar to the GtkDialog API
+
+    ]]
     local InfoBar = Gtk.InfoBar({
       visible = true,
       message_type = Gtk.MessageType[self.label:upper()],
       show_close_button = true
     })
 
+    -- For this widget, the 'get_content_area()' method always returns a Gtk.Box
     InfoBar
       :get_content_area()
       :pack_start(Gtk.Label({ visible = true, label = self.label }), false, true, 0)
 
+    -- When an action widget is clicked, this signal is emitted
     function InfoBar:on_response()
+      -- For this case, just remove it from the Gtk.Box and then destroy it
       Box:remove(self)
       self:destroy()
     end
 
+    -- Add the info bar to the Gtk.Box
     Box:pack_start(InfoBar, false, true, 0)
   end
 

@@ -17,11 +17,13 @@ function App:on_activate()
   self.active_window:set_titlebar(Gtk.HeaderBar({
     visible = true,
     show_close_button = true,
-    title = "Your app title",
-    subtitle = "Your app subtitle"
+    title = "GtkImage",
+    subtitle = "Example 2"
   }))
 
-  self.active_window:add(Gtk.Image({ visible = true, icon_name = "firefox", pixel_size = 256 }))
+  local Img = Gtk.Image({ visible = true, icon_name = "firefox", pixel_size = 256 })
+
+  self.active_window:add(Img)
   self.active_window:present()
 end
 

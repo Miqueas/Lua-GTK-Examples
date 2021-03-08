@@ -6,6 +6,11 @@ local App = Gtk.Application({
 })
 
 function App:on_startup()
+  --[[ GtkFileChooserDialog:
+
+    A file selection dialog
+
+  ]]
   local Dialog  = Gtk.FileChooserDialog({
     title = "Select a file",
     action = Gtk.FileChooserAction.OPEN

@@ -7,11 +7,16 @@ local App = Gtk.Application({
 })
 
 function App:on_startup()
+  --[[ GtkDialog:
+
+    A (generic) popup window
+
+  ]]
   local Dialog = Gtk.Dialog({
     application = self,
     default_width = 400,
     border_width = 10,
-    title = "Confirmation"
+    title = "GtkDialog - Example 1"
   })
 
   Dialog:add_button("Yes 👍", Gtk.ResponseType.OK)

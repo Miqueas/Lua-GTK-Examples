@@ -17,10 +17,14 @@ function App:on_activate()
   self.active_window:set_titlebar(Gtk.HeaderBar({
     visible = true,
     show_close_button = true,
-    title = "Your app title",
-    subtitle = "Your app subtitle"
+    title = "GtkPaned"
   }))
 
+  --[[ GtkPaned:
+
+    A widget with two adjustable panes
+
+  ]]
   local Paned = Gtk.Paned({ visible = true, orientation = Gtk.Orientation.HORIZONTAL })
   Paned:pack1(Gtk.Label({ visible = true, label = "Space 1" }), true, false)
   Paned:pack2(Gtk.Label({ visible = true, label = "Space 2" }), true, false)

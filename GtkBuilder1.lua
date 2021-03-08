@@ -13,7 +13,7 @@ local Gtk = lgi.require("Gtk", "3.0")
   your app will do.
 
 ]]
-local Builder = Gtk.Builder.new_from_file("GtkBuilder1.ui")
+local Builder = Gtk.Builder.new_from_file("GtkBuilder.ui")
 
 local App     = Gtk.Application({
   application_id = "com.github.moonsteal.lua-gtk-examples.GtkBuilder1"
