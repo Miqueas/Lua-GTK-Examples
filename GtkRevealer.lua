@@ -2,7 +2,7 @@ local lgi = require("lgi")
 local Gtk = lgi.require("Gtk", "3.0")
 
 local App = Gtk.Application({
-  application_id = "com.github.moonsteal.lua-gtk-examples.GtkPaned"
+  application_id = "com.github.moonsteal.lua-gtk-examples.GtkRevealer"
 })
 
 function App:on_startup()
