@@ -20,7 +20,7 @@ function App:on_activate()
     title = "GtkStatusbar"
   }))
 
-  --[[ GtkActionBar:
+  --[[ GtkStatusbar:
 
     A widget like GtkActionBar for report some info to the user.
 
