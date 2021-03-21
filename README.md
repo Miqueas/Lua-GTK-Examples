@@ -1,40 +1,65 @@
 # Lua GTK Examples
 
-This repository contains a variety of examples of GTK with Lua
+This repository contains a variety of examples of GTK with Lua. Based on [this repository](https://github.com/gerito1/vala-gtk-examples)
 
-Based on [this repository](https://github.com/gerito1/vala-gtk-examples)
+Here is a list of the demostrated GTK API in these examples:
 
-## _"Where to start?"_
+  * [ActionBar][ActionBar_API]
+  * [Application][Application_API]
+  * [ApplicationWindow][ApplicationWindow_API]
+  * [Box][Box_API]
+  * [Builder][Builder_API]
+  * [Button][Button_API]
+  * [ComboBox][ComboBox_API]
+  * [ComboBoxText][ComboBoxText_API]
+  * [CssProvider][CssProvider_API]
+  * [Dialog][Dialog_API]
+  * [Entry][Entry_API]
+  * [EntryCompletion][EntryCompletion_API]
+  * [Expander][Expander_API]
+  * [FileChooserButton][FileChooserButton_API]
+  * [FileChooserDialog][FileChooserDialog_API]
+  * [Grid][Grid_API]
+  * [HeaderBar][HeaderBar_API]
+  * [Image][Image_API]
+  * [InfoBar][InfoBar_API]
+  * [Label][Label_API]
+  * [ListBox][ListBox_API]
+  * [Notebook][Notebook_API]
+  * [Overlay][Overlay_API]
+  * [Paned][Paned_API]
+  * [Revealer][Revealer_API]
+  * [ScolledWindow][ScolledWindow_API]
+  * [Stack][Stack_API]
+  * [Statusbar][Statusbar_API]
+  * [Window][Window_API]
 
-Ok, if you're new in GTK, we recommen this order:
-
-  - [GtkWindow](GtkWindow.lua)
-    * [GtkWindow API Docs][GtkWindow_API]
-  - [GtkApplication](GtkApplication.lua)
-    * [GtkApplication API Docs][GtkApplication_API]
-  - [GtkApplicationWindow](GtkApplicationWindow.lua)
-    * [GtkApplicationWindow API Docs][GtkApplicationWindow_API]
-  - [GtkHeaderBar](GtkHeaderBar.lua)
-    * [GtkHeaderBar API Docs][GtkHeaderBar_API]
-  - [GtkLabel1](GtkLabel1.lua)
-  - [GtkLabel2](GtkLabel2.lua)
-    * [GtkLabel API Docs][GtkLabel_API]
-  - [GtkBox1](GtkBox1.lua)
-    * [GtkBox API Docs][GtkBox_API]
-  - [GtkGrid1](GtkGrid1.lua)
-  - [GtkGrid2](GtkGrid2.lua)
-    * [GtkGrid API Docs][GtkGrid_API]
-  - [GtkButton1](GtkButton1.lua)
-    * [GtkButton API Docs][GtkButton_API]
-  - [GtkCssProvider1](GtkCssProvider1.lua) by [@diazvictor](https://github.com/diazvictor/)
-	* [GtkCssProvider API Docs][GtkCssProvider_API]
-
-[GtkWindow_API]: https://developer.gnome.org/gtk3/stable/GtkWindow.html
-[GtkApplication_API]: https://developer.gnome.org/gtk3/stable/GtkApplication.html
-[GtkApplicationWindow_API]: https://developer.gnome.org/gtk3/stable/GtkApplicationWindow.html
-[GtkHeaderBar_API]: https://developer.gnome.org/gtk3/stable/GtkHeaderBar.html
-[GtkLabel_API]: https://developer.gnome.org/gtk3/stable/GtkLabel.html
-[GtkButton_API]: https://developer.gnome.org/gtk3/stable/GtkButton.html
-[GtkBox_API]: https://developer.gnome.org/gtk3/stable/GtkBox.html
-[GtkGrid_API]: https://developer.gnome.org/gtk3/stable/GtkGrid.html
-[GtkCssProvider_API]: https://developer.gnome.org/gtk3/stable/GtkCssProvider.html
+[ActionBar_API]: https://developer.gnome.org/gtk3/stable/GtkActionBar.html
+[Application_API]: https://developer.gnome.org/gtk3/stable/GtkApplication.html
+[ApplicationWindow_API]: https://developer.gnome.org/gtk3/stable/GtkApplicationWindow.html
+[Box_API]: https://developer.gnome.org/gtk3/stable/GtkBox.html
+[Builder_API]: https://developer.gnome.org/gtk3/stable/GtkBuilder.html
+[Button_API]: https://developer.gnome.org/gtk3/stable/GtkButton.html
+[ComboBox_API]: https://developer.gnome.org/gtk3/stable/GtkComboBox.html
+[ComboBoxText_API]: https://developer.gnome.org/gtk3/stable/GtkComboBoxText.html
+[CssProvider_API]: https://developer.gnome.org/gtk3/stable/GtkCssProvider.html
+[Dialog_API]: https://developer.gnome.org/gtk3/stable/GtkDialog.html
+[Entry_API]: https://developer.gnome.org/gtk3/stable/GtkEntry.html
+[EntryCompletion_API]: https://developer.gnome.org/gtk3/stable/GtkEntryCompletion.html
+[Expander_API]: https://developer.gnome.org/gtk3/stable/GtkExpander.html
+[FileChooserButton_API]: https://developer.gnome.org/gtk3/stable/GtkFileChooserButton.html
+[FileChooserDialog_API]: https://developer.gnome.org/gtk3/stable/GtkFileChooserDialog.html
+[Grid_API]: https://developer.gnome.org/gtk3/stable/GtkGrid.html
+[HeaderBar_API]: https://developer.gnome.org/gtk3/stable/GtkHeaderBar.html
+[Image_API]: https://developer.gnome.org/gtk3/stable/GtkImage.html
+[InfoBar_API]: https://developer.gnome.org/gtk3/stable/GtkInfoBar.html
+[Label_API]: https://developer.gnome.org/gtk3/stable/GtkLabel.html
+[ListBox_API]: https://developer.gnome.org/gtk3/stable/GtkListBox.html
+[Notebook_API]: https://developer.gnome.org/gtk3/stable/GtkNotebook.html
+[Overlay_API]: https://developer.gnome.org/gtk3/stable/GtkOverlay.html
+[Paned_API]: https://developer.gnome.org/gtk3/stable/GtkPaned.html
+[Revealer_API]: https://developer.gnome.org/gtk3/stable/GtkRevealer.html
+[ScolledWindow_API]: https://developer.gnome.org/gtk3/stable/GtkScolledWindow.html
+[Stack_API]: https://developer.gnome.org/gtk3/stable/GtkStack.html
+[Statusbar_API]: https://developer.gnome.org/gtk3/stable/GtkStatusbar.html
+[Window_API]: https://developer.gnome.org/gtk3/stable/GtkWindow.html
