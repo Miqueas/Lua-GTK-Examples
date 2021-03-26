@@ -19,6 +19,7 @@ function App:on_startup()
   local Dialog = Gtk.MessageDialog({
     application = self,
     buttons = Gtk.ButtonsType.NONE,
+    message_type = Gtk.MessageType.QUESTION,
     title = "GtkMessageDialog",
     text = Title,
     use_markup = true,
