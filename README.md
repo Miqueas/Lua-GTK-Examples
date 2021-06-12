@@ -29,7 +29,7 @@ Here is a list of the demostrated GTK API in these examples:
   * [Overlay][Overlay_API]
   * [Paned][Paned_API]
   * [Revealer][Revealer_API]
-  * [ScolledWindow][ScolledWindow_API]
+  * [ScrolledWindow][ScrolledWindow_API]
   * [Stack][Stack_API]
   * [Statusbar][Statusbar_API]
   * [Window][Window_API]
@@ -59,7 +59,7 @@ Here is a list of the demostrated GTK API in these examples:
 [Overlay_API]: https://developer.gnome.org/gtk3/stable/GtkOverlay.html
 [Paned_API]: https://developer.gnome.org/gtk3/stable/GtkPaned.html
 [Revealer_API]: https://developer.gnome.org/gtk3/stable/GtkRevealer.html
-[ScolledWindow_API]: https://developer.gnome.org/gtk3/stable/GtkScolledWindow.html
+[ScrolledWindow_API]: https://developer.gnome.org/gtk3/stable/GtkScrolledWindow.html
 [Stack_API]: https://developer.gnome.org/gtk3/stable/GtkStack.html
 [Statusbar_API]: https://developer.gnome.org/gtk3/stable/GtkStatusbar.html
 [Window_API]: https://developer.gnome.org/gtk3/stable/GtkWindow.html

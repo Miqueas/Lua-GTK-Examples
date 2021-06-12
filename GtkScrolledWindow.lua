@@ -22,7 +22,6 @@ function App:on_activate()
 
   local Grid = Gtk.Grid({
     visible = true,
-    visible = true,
     column_homogeneous = true,
     row_homogeneous = true,
     column_spacing = 10,
