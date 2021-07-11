@@ -29,9 +29,7 @@ function App:on_activate()
   local Items = { "GNOME", "Lua", "LGI", "GTK", "Moonsteal", "Example" }
 
   -- Add the items to the model
-  for _, Name in ipairs(Items) do
-    Model:append({ Name })
-  end
+  for _, Name in ipairs(Items) do Model:append({ Name }) end
 
   -- The entry completion
   local Completion = Gtk.EntryCompletion({
@@ -40,19 +38,8 @@ function App:on_activate()
     popup_completion = true
   })
 
-  -- Label to be updated
-  local Label = Gtk.Label({ visible = true })
-
   -- The entry
-  local Entry = Gtk.Entry({
-    visible = true,
-    completion = Completion
-  })
-
-  -- Updates the label text while typing
-  function Entry:on_key_release_event()
-    Label.label = Entry.text
-  end
+  local Entry = Gtk.Entry({ visible = true, completion = Completion })
 
   local Box = Gtk.Box({
     visible = true,
@@ -62,8 +49,7 @@ function App:on_activate()
     valign = Gtk.Align.CENTER,
 
     Gtk.Label({ visible = true, label = "Try \"gnome\" or \"gtk\"" }),
-    Entry,
-    Label
+    Entry
   })
 
   self.active_window:add(Box)

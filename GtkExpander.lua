@@ -9,7 +9,8 @@ function App:on_startup()
   Gtk.ApplicationWindow({
     application = self,
     default_width = 400,
-    border_width = 10
+    border_width = 10,
+    resizable = false
   })
 end
 
@@ -21,7 +22,13 @@ function App:on_activate()
     subtitle = "Your app subtitle"
   }))
 
-  local LoremIpsum = "Duis in metus eros. Duis faucibus rutrum eros eu vestibulum. Proin et arcu nulla. Etiam at lacinia nibh. Vivamus pellentesque nunc nibh, ac dignissim massa lobortis ut. Integer eu felis in elit semper ullamcorper at in ipsum. Suspendisse tempus massa vel nibh tristique vestibulum. Vestibulum varius eu nunc eu interdum. Curabitur pulvinar velit in purus facilisis, et auctor augue consequat. Donec finibus felis ligula, a convallis justo tristique a."
+  local LoremIpsum = [[Duis in metus eros. Duis faucibus rutrum eros eu vestibulum.
+Proin et arcu nulla. Etiam at lacinia nibh. Vivamus pellentesque nunc nibh,
+ac dignissim massa lobortis ut. Integer eu felis in elit semper ullamcorper
+at in ipsum. Suspendisse tempus massa vel nibh tristique vestibulum.
+Vestibulum varius eu nunc eu interdum. Curabitur pulvinar velit in purus
+facilisis, et auctor augue consequat. Donec finibus felis ligula, a convallis
+justo tristique a.]]
 
   --[[ GtkExpander:
 
