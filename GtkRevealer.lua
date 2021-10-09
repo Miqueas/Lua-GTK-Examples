@@ -9,7 +9,7 @@ function App:on_startup()
   Gtk.ApplicationWindow({
     application = self,
     default_width = 400,
-    default_height = 40
+    default_height = 10
   })
 end
 
@@ -33,6 +33,7 @@ function App:on_activate()
   ]]
   local Rev = Gtk.Revealer({
     visible = true,
+    reveal_child = true,
 
     Gtk.Label({ visible = true, label = "Hello there!", margin = 10 })
   })
