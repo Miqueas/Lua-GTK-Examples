@@ -2,7 +2,7 @@ local lgi = require("lgi")
 local Gtk = lgi.require("Gtk", "3.0")
 
 local App = Gtk.Application({
-  application_id = "com.github.moonsteal.lua-gtk-examples.GtkOverlay"
+  application_id = "com.github.moonsteal.Lua-GTK3-Examples.GtkOverlay"
 })
 
 function App:on_startup()
@@ -34,26 +34,26 @@ function App:on_activate()
     -- Our main widget
     Gtk.Image({
       visible = true,
-      icon_name = "firefox",
+      icon_name = "computer",
       pixel_size = 256
     })
   })
 
   Overlay:add_overlay(Gtk.Image({
     visible = true,
-    icon_name = "firefox-symbolic",
+    icon_name = "computer-symbolic",
     pixel_size = 128
   }))
 
   Overlay:add_overlay(Gtk.Image({
     visible = true,
-    icon_name = "google-chrome",
+    icon_name = "input-gaming",
     pixel_size = 64
   }))
 
   Overlay:add_overlay(Gtk.Image({
     visible = true,
-    icon_name = "google-chrome-symbolic",
+    icon_name = "input-gaming-symbolic",
     pixel_size = 32
   }))
 
