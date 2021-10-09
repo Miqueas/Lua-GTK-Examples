@@ -1,6 +1,16 @@
-# Lua GTK Examples
+# Lua GTK 3 Examples
 
-This repository contains a variety of examples of GTK with Lua. Based on [this repository](https://github.com/gerito1/vala-gtk-examples)
+This repository contains a set of examples of GTK 3 with Lua. Based on [this repository](https://github.com/gerito1/vala-gtk-examples)
+
+## Requeriments
+
+Lua 5.1, 5.2 or 5.3 is required, Lua 5.4 was not tested already. Additionally, this dependencies are necessary:
+
+ * [lgi](https://github.com/pavouk/lgi)
+ * `gobject-introspection >= 1.70`
+ * `gtk3 >= 3.24`
+
+## GTK API covered in this repo
 
 Here is a list of the demostrated GTK API in these examples:
 
