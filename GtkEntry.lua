@@ -3,7 +3,7 @@ local Gtk = lgi.require("Gtk", "3.0")
 local GObject = lgi.require("GObject", "2.0")
 
 local App = Gtk.Application({
-  application_id = "com.github.moonsteal.lua-gtk-examples.GtkEntry"
+  application_id = "com.github.moonsteal.Lua-GTK3-Examples.GtkEntry"
 })
 
 function App:on_startup()

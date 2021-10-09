@@ -2,7 +2,7 @@ local lgi = require("lgi")
 local Gtk = lgi.require("Gtk", "3.0")
 
 local App = Gtk.Application({
-  application_id = "com.github.moonsteal.lua-gtk-examples.GtkImage2"
+  application_id = "com.github.moonsteal.Lua-GTK3-Examples.GtkImage2"
 })
 
 function App:on_startup()
@@ -21,7 +21,7 @@ function App:on_activate()
     subtitle = "Example 2"
   }))
 
-  local Img = Gtk.Image({ visible = true, icon_name = "firefox", pixel_size = 256 })
+  local Img = Gtk.Image({ visible = true, icon_name = "computer", pixel_size = 256 })
 
   self.active_window:add(Img)
   self.active_window:present()
