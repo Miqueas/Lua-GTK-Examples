@@ -6,9 +6,13 @@ This repository contains a set of examples of GTK 3 with Lua. Based on [this rep
 
 Lua 5.1, 5.2 or 5.3 is required, Lua 5.4 was not tested already. Additionally, this dependencies are necessary:
 
- * [lgi](https://github.com/pavouk/lgi)
+ * [lgi][lgi_repo]
  * `gobject-introspection >= 1.70`
  * `gtk3 >= 3.24`
+
+## Building
+
+The [meson file](meson.build) it's just to help you for check the dependencies (except for [lgi][lgi_repo], you need to install it if you don't have it), it actually does nothing with the source files.
 
 ## GTK API covered in this repo
 
@@ -44,6 +48,7 @@ Here is a list of the demostrated GTK API in these examples:
   * [Statusbar][Statusbar_API]
   * [Window][Window_API]
 
+[lgi_repo]: https://github.com/pavouk/lgi
 [ActionBar_API]: https://developer.gnome.org/gtk3/stable/GtkActionBar.html
 [Application_API]: https://developer.gnome.org/gtk3/stable/GtkApplication.html
 [ApplicationWindow_API]: https://developer.gnome.org/gtk3/stable/GtkApplicationWindow.html
