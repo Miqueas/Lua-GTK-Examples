@@ -3,7 +3,7 @@ local Gtk   = lgi.require("Gtk", "3.0")
 local Pango = lgi.require("Pango", "1.0")
 
 local App = Gtk.Application({
-  application_id = "com.github.moonsteal.Lua-GTK3-Examples.GtkDialog1"
+  application_id = "com.github.Miqueas.Lua-GTK3-Examples.GtkDialog1"
 })
 
 function App:on_startup()

@@ -4,7 +4,7 @@ local Gio  = lgi.require("Gio", "2.0")
 local GLib = lgi.require("GLib", "2.0")
 
 local App = Gtk.Application({
-  application_id = "com.github.moonsteal.Lua-GTK3-Examples.GtkButton1"
+  application_id = "com.github.Miqueas.Lua-GTK3-Examples.GtkButton1"
 })
 
 function App:on_startup()

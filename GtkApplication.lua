@@ -8,7 +8,7 @@ local Gtk = lgi.require("Gtk", "3.0")
 
 ]]
 local App = Gtk.Application({
-  application_id = "com.github.moonsteal.Lua-GTK3-Examples.GtkApplication"
+  application_id = "com.github.Miqueas.Lua-GTK3-Examples.GtkApplication"
 })
 
 -- For more info about these signals, see this:
