@@ -18,10 +18,19 @@
         <property name="column-homogeneous">True</property>
         <child>
           <object class="GtkButton" id="button11">
-            <property name="label" translatable="yes">0</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">0</property>
+                <attributes>
+                  <attribute name="scale" value="4"/>
+                </attributes>
+              </object>
+            </child>
           </object>
           <packing>
             <property name="left-attach">0</property>
@@ -30,10 +39,19 @@
         </child>
         <child>
           <object class="GtkButton" id="button12">
-            <property name="label" translatable="yes">0</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">0</property>
+                <attributes>
+                  <attribute name="scale" value="4"/>
+                </attributes>
+              </object>
+            </child>
           </object>
           <packing>
             <property name="left-attach">1</property>
@@ -42,10 +60,19 @@
         </child>
         <child>
           <object class="GtkButton" id="button13">
-            <property name="label" translatable="yes">0</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">0</property>
+                <attributes>
+                  <attribute name="scale" value="4"/>
+                </attributes>
+              </object>
+            </child>
           </object>
           <packing>
             <property name="left-attach">2</property>
@@ -54,10 +81,19 @@
         </child>
         <child>
           <object class="GtkButton" id="button21">
-            <property name="label" translatable="yes">0</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">0</property>
+                <attributes>
+                  <attribute name="scale" value="4"/>
+                </attributes>
+              </object>
+            </child>            
           </object>
           <packing>
             <property name="left-attach">0</property>
@@ -66,10 +102,19 @@
         </child>
         <child>
           <object class="GtkButton" id="button22">
-            <property name="label" translatable="yes">0</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">0</property>
+                <attributes>
+                  <attribute name="scale" value="4"/>
+                </attributes>
+              </object>
+            </child>            
           </object>
           <packing>
             <property name="left-attach">1</property>
@@ -78,10 +123,19 @@
         </child>
         <child>
           <object class="GtkButton" id="button23">
-            <property name="label" translatable="yes">0</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">0</property>
+                <attributes>
+                  <attribute name="scale" value="4"/>
+                </attributes>
+              </object>
+            </child>            
           </object>
           <packing>
             <property name="left-attach">2</property>
@@ -90,10 +144,19 @@
         </child>
         <child>
           <object class="GtkButton" id="button31">
-            <property name="label" translatable="yes">0</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">0</property>
+                <attributes>
+                  <attribute name="scale" value="4"/>
+                </attributes>
+              </object>
+            </child>            
           </object>
           <packing>
             <property name="left-attach">0</property>
@@ -102,10 +165,19 @@
         </child>
         <child>
           <object class="GtkButton" id="button32">
-            <property name="label" translatable="yes">0</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">0</property>
+                <attributes>
+                  <attribute name="scale" value="4"/>
+                </attributes>
+              </object>
+            </child>            
           </object>
           <packing>
             <property name="left-attach">1</property>
@@ -114,10 +186,19 @@
         </child>
         <child>
           <object class="GtkButton" id="button33">
-            <property name="label" translatable="yes">0</property>
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <child>
+              <object class="GtkLabel">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">0</property>
+                <attributes>
+                  <attribute name="scale" value="4"/>
+                </attributes>
+              </object>
+            </child>            
           </object>
           <packing>
             <property name="left-attach">2</property>

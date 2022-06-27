@@ -18,7 +18,8 @@ end
 function grid_click(button)
   local counter = 1
   function button:on_clicked()
-    self.label = counter
+    local label_parent = self.child[1] or self
+    label_parent.label = counter
     counter = counter + 1
   end
 end
