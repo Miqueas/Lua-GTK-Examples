@@ -41,7 +41,10 @@ function App:on_activate()
     self.label = label
     print(label)
 
+    if Notification_ID >= 3 then window:destroy() end
+
     Notification_ID = Notification_ID + 1
+    
   end
 
   window:add(Button)
